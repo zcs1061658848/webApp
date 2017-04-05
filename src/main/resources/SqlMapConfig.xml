@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration    
+PUBLIC "-//ibatis.apache.org//DTD Config 3.0//EN"    
+"http://ibatis.apache.org/dtd/ibatis-3-config.dtd">    
+       <configuration>  
+        <settings >  
+            <!-- 不启用延迟加载 -->  
+            <setting name="lazyLoadingEnabled" value="false"/>  
+        </settings>  
+             <!-- 为bean 起别名：使用它们你可以不用输入类的全路径，type为相关bean的路径，alias为bean起别名 -->  
+            <typeAliases>  
+                <typeAlias type="webApp.Pojo.User" alias="User"/>    
+            </typeAliases>  
+              
+            <!-- 配置orm映射 -->  
+            <mappers>  
+                <mapper resource="webApp/mapping/User.xml"/>    
+            </mappers>  
+       </configuration>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

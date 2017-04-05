@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper   
+PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"   
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+
+<mapper namespace="webApp.dao.UserDao" >
+
+<resultMap type="User" id="Users" >
+	<id property="id" column="id" />
+	<result property="name" column="name" />
+	<result property="password" column="password" />
+	<result property="email" column="email" />
+</resultMap>
+
+    <select id="getAllUser" resultMap="Users">  
+        select id, name, password, email from userTest
+    </select>  
+
+</mapper>
